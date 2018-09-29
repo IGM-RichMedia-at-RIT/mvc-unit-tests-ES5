@@ -1,0 +1,26 @@
+{
+  "name": "unit_tests",
+  "version": "1.0.0",
+  "description": "A small introduction to unit testing using Mocha",
+  "main": "./server/src/app.js",
+  "scripts": {
+    "start": "node ./server/src/app.js",
+    "pretest": "jshint ./server",
+    "test": "mocha --timeout 5000 --recursive --reporter nyan server/test/"
+  },
+  "keywords": [
+    "Mocha",
+    "Unit",
+    "Testing",
+    "Tests"
+  ],
+  "author": "Cody Van De Mark",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^1.10.0",
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1",
+    "sinon": "^1.12.1",
+    "supertest": "^0.15.0"
+  }
+}
